@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07D3DC0C7AA72324FB87C8C5 /* OnboardingInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63886B1F1059F55F88C9B837 /* OnboardingInteractorOutput.swift */; };
+		0E334971FA46B129EF184F7D /* OnboardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CE9009BF028040F3F66C47 /* OnboardingInteractor.swift */; };
+		306136D684AD225F1211C6BB /* Pods_EitaPAYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E019C5FE01FFAF16698F57 /* Pods_EitaPAYUITests.framework */; };
+		33B53F201DD0ECD500462C66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B53F1F1DD0ECD500462C66 /* AppDelegate.swift */; };
+		33B53F251DD0ECD500462C66 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		33B53F271DD0ECD500462C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33B53F261DD0ECD500462C66 /* Assets.xcassets */; };
+		33B53F2A1DD0ECD500462C66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B53F281DD0ECD500462C66 /* LaunchScreen.storyboard */; };
+		33B53F351DD0ECD600462C66 /* EitaPAYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B53F341DD0ECD600462C66 /* EitaPAYTests.swift */; };
+		33B53F401DD0ECD600462C66 /* EitaPAYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B53F3F1DD0ECD600462C66 /* EitaPAYUITests.swift */; };
+		33B53F5A1DD0FC8F00462C66 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B53F591DD0FC8F00462C66 /* AppDependencies.swift */; };
+		33B53F5D1DD0FDD200462C66 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B53F5C1DD0FDD200462C66 /* RootWireframe.swift */; };
+		33B53F601DD11B1700462C66 /* OnboardingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B53F5F1DD11B1700462C66 /* OnboardingStoryboard.storyboard */; };
+		33B53F621DD12B4D00462C66 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B53F611DD12B4D00462C66 /* LoginStoryboard.storyboard */; };
+		3A7DA5A940801D37D86F6892 /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D3905EAFF105F253DDE571 /* OnboardingPresenter.swift */; };
+		3A8878341A357AC1352BFB6D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7FC6B662F8A4F501C259F8 /* OnboardingViewController.swift */; };
+		3EDAAC7A055812F35D27C17F /* LoginViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9824CF08327E7A62B83C41D6 /* LoginViewOutput.swift */; };
+		435A146BF35FF166306C4776 /* LoginInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C496D3AB68501F92860A3067 /* LoginInteractorOutput.swift */; };
+		454997B161D54470CD86A218 /* Pods_EitaPAYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE439189BD48D480CADAC94F /* Pods_EitaPAYTests.framework */; };
+		5C6241BC74DBE7ABF43791AC /* OnboardingViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931459935DDE86D49B5EA0AF /* OnboardingViewInput.swift */; };
+		5D076329073CFA1EDC1555A0 /* OnboardingInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C648C15AE4517E9CA71250 /* OnboardingInteractorInput.swift */; };
+		5FDFD01086CA95DB2CA0404A /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D741AEFD49F189D909E08 /* OnboardingRouter.swift */; };
+		61A2528AAB7CE03CC36FC736 /* LoginModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A4585515F8EB4C485D3E3 /* LoginModuleInput.swift */; };
+		668D5910720D55416509AB50 /* OnboardingViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224608C41FC9D38B85F678A7 /* OnboardingViewOutput.swift */; };
+		6D4C8C323CD60F4EBE5BE347 /* OnboardingModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C285CF0B5076528154DDB24 /* OnboardingModuleInput.swift */; };
+		6E22E02861B2E73C8CA537D2 /* LoginViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16658FB45368E5459F392A47 /* LoginViewInput.swift */; };
+		755D076908AA38A083264A73 /* LoginInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5069817CCC367FD068440369 /* LoginInteractorInput.swift */; };
+		7FC56D3584747D6FA2213C23 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D17BC4079A8AF6773190D9 /* LoginInteractor.swift */; };
+		A747B789F0367FDE86E1B850 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB90BC9C42EE658E678FCE /* LoginRouter.swift */; };
+		B056022AB34BD47664EB4816 /* OnboardingRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BAE5F06D1B0749D2675055 /* OnboardingRouterInput.swift */; };
+		C57CDCD759FBB5F3B4BDF0BB /* LoginRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9ABFEDF5193E8152C70B1A /* LoginRouterInput.swift */; };
+		E4FEF9A7ACC07B02EE44A935 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6D1CB8E31C642E6E8E6D46 /* LoginPresenter.swift */; };
+		E995AB67E08C721A8A2C56A5 /* Pods_EitaPAY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C8C75A9C4F620617B81875 /* Pods_EitaPAY.framework */; };
+		FA26E55A460859FC1D55516A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC2E0DC18987BC2018F6244 /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33B53F311DD0ECD600462C66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33B53F141DD0ECD500462C66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33B53F1B1DD0ECD500462C66;
+			remoteInfo = EitaPAY;
+		};
+		33B53F3C1DD0ECD600462C66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33B53F141DD0ECD500462C66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33B53F1B1DD0ECD500462C66;
+			remoteInfo = EitaPAY;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10D17BC4079A8AF6773190D9 /* LoginInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		16658FB45368E5459F392A47 /* LoginViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInput.swift; sourceTree = "<group>"; };
+		1E2D741AEFD49F189D909E08 /* OnboardingRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
+		224608C41FC9D38B85F678A7 /* OnboardingViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingViewOutput.swift; sourceTree = "<group>"; };
+		224A4585515F8EB4C485D3E3 /* LoginModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginModuleInput.swift; sourceTree = "<group>"; };
+		22DB90BC9C42EE658E678FCE /* LoginRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		251D38CBF1293770954364EA /* Pods-EitaPAY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EitaPAY.release.xcconfig"; path = "Pods/Target Support Files/Pods-EitaPAY/Pods-EitaPAY.release.xcconfig"; sourceTree = "<group>"; };
+		2684FAB72651AF11D46694DB /* Pods-EitaPAYTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EitaPAYTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EitaPAYTests/Pods-EitaPAYTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C285CF0B5076528154DDB24 /* OnboardingModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingModuleInput.swift; sourceTree = "<group>"; };
+		33B53F1C1DD0ECD500462C66 /* EitaPAY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EitaPAY.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33B53F1F1DD0ECD500462C66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33B53F261DD0ECD500462C66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33B53F291DD0ECD500462C66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33B53F2B1DD0ECD500462C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33B53F301DD0ECD500462C66 /* EitaPAYTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EitaPAYTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33B53F341DD0ECD600462C66 /* EitaPAYTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EitaPAYTests.swift; sourceTree = "<group>"; };
+		33B53F361DD0ECD600462C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33B53F3B1DD0ECD600462C66 /* EitaPAYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EitaPAYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33B53F3F1DD0ECD600462C66 /* EitaPAYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EitaPAYUITests.swift; sourceTree = "<group>"; };
+		33B53F411DD0ECD600462C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33B53F591DD0FC8F00462C66 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		33B53F5C1DD0FDD200462C66 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		33B53F5F1DD11B1700462C66 /* OnboardingStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnboardingStoryboard.storyboard; sourceTree = "<group>"; };
+		33B53F611DD12B4D00462C66 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		3D814F03EDC0E76DD9F62E10 /* Pods-EitaPAY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EitaPAY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EitaPAY/Pods-EitaPAY.debug.xcconfig"; sourceTree = "<group>"; };
+		5069817CCC367FD068440369 /* LoginInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorInput.swift; sourceTree = "<group>"; };
+		52E1EE5855FCAF36E3598E61 /* Pods-EitaPAYTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EitaPAYTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EitaPAYTests/Pods-EitaPAYTests.release.xcconfig"; sourceTree = "<group>"; };
+		54D3905EAFF105F253DDE571 /* OnboardingPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		63886B1F1059F55F88C9B837 /* OnboardingInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingInteractorOutput.swift; sourceTree = "<group>"; };
+		67CE9009BF028040F3F66C47 /* OnboardingInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingInteractor.swift; sourceTree = "<group>"; };
+		70C8C75A9C4F620617B81875 /* Pods_EitaPAY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EitaPAY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		931459935DDE86D49B5EA0AF /* OnboardingViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingViewInput.swift; sourceTree = "<group>"; };
+		97B09D973F4F35245E40B3EE /* Pods-EitaPAYUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EitaPAYUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EitaPAYUITests/Pods-EitaPAYUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9824CF08327E7A62B83C41D6 /* LoginViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewOutput.swift; sourceTree = "<group>"; };
+		A2E019C5FE01FFAF16698F57 /* Pods_EitaPAYUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EitaPAYUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C648C15AE4517E9CA71250 /* OnboardingInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingInteractorInput.swift; sourceTree = "<group>"; };
+		AD6D1CB8E31C642E6E8E6D46 /* LoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		B42CD2FF0D3C8DA47897562E /* Pods-EitaPAYUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EitaPAYUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EitaPAYUITests/Pods-EitaPAYUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBC2E0DC18987BC2018F6244 /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BE439189BD48D480CADAC94F /* Pods_EitaPAYTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EitaPAYTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C496D3AB68501F92860A3067 /* LoginInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorOutput.swift; sourceTree = "<group>"; };
+		ED7FC6B662F8A4F501C259F8 /* OnboardingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		F0BAE5F06D1B0749D2675055 /* OnboardingRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingRouterInput.swift; sourceTree = "<group>"; };
+		FF9ABFEDF5193E8152C70B1A /* LoginRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterInput.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33B53F191DD0ECD500462C66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E995AB67E08C721A8A2C56A5 /* Pods_EitaPAY.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33B53F2D1DD0ECD500462C66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454997B161D54470CD86A218 /* Pods_EitaPAYTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33B53F381DD0ECD600462C66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306136D684AD225F1211C6BB /* Pods_EitaPAYUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C387B64B7EF1140687473F6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F0BAE5F06D1B0749D2675055 /* OnboardingRouterInput.swift */,
+				1E2D741AEFD49F189D909E08 /* OnboardingRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		22C5686CF5C81944DD0A12A0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2C285CF0B5076528154DDB24 /* OnboardingModuleInput.swift */,
+				54D3905EAFF105F253DDE571 /* OnboardingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		33B53F131DD0ECD500462C66 = {
+			isa = PBXGroup;
+			children = (
+				33B53F1E1DD0ECD500462C66 /* EitaPAY */,
+				33B53F331DD0ECD600462C66 /* EitaPAYTests */,
+				33B53F3E1DD0ECD600462C66 /* EitaPAYUITests */,
+				33B53F1D1DD0ECD500462C66 /* Products */,
+				DFB5FC0D54F1EEAC86F81462 /* Pods */,
+				D48F497F7462233E9A7622F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		33B53F1D1DD0ECD500462C66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33B53F1C1DD0ECD500462C66 /* EitaPAY.app */,
+				33B53F301DD0ECD500462C66 /* EitaPAYTests.xctest */,
+				33B53F3B1DD0ECD600462C66 /* EitaPAYUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33B53F1E1DD0ECD500462C66 /* EitaPAY */ = {
+			isa = PBXGroup;
+			children = (
+				33B53F5B1DD0FD9500462C66 /* Application */,
+				33E031C5C8BB899C8D6BE189 /* Modules */,
+				33B53F261DD0ECD500462C66 /* Assets.xcassets */,
+				33B53F2B1DD0ECD500462C66 /* Info.plist */,
+			);
+			path = EitaPAY;
+			sourceTree = "<group>";
+		};
+		33B53F331DD0ECD600462C66 /* EitaPAYTests */ = {
+			isa = PBXGroup;
+			children = (
+				33B53F341DD0ECD600462C66 /* EitaPAYTests.swift */,
+				33B53F361DD0ECD600462C66 /* Info.plist */,
+			);
+			path = EitaPAYTests;
+			sourceTree = "<group>";
+		};
+		33B53F3E1DD0ECD600462C66 /* EitaPAYUITests */ = {
+			isa = PBXGroup;
+			children = (
+				33B53F3F1DD0ECD600462C66 /* EitaPAYUITests.swift */,
+				33B53F411DD0ECD600462C66 /* Info.plist */,
+			);
+			path = EitaPAYUITests;
+			sourceTree = "<group>";
+		};
+		33B53F5B1DD0FD9500462C66 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				33B53F281DD0ECD500462C66 /* LaunchScreen.storyboard */,
+				33B53F1F1DD0ECD500462C66 /* AppDelegate.swift */,
+				33B53F591DD0FC8F00462C66 /* AppDependencies.swift */,
+				33B53F5C1DD0FDD200462C66 /* RootWireframe.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		33E031C5C8BB899C8D6BE189 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9BFF55B41006B4E313504E63 /* Onboarding */,
+				A3CD41A2371AAF6158E901AB /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		90D2F8FF02C159A52E8C2350 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A8C648C15AE4517E9CA71250 /* OnboardingInteractorInput.swift */,
+				63886B1F1059F55F88C9B837 /* OnboardingInteractorOutput.swift */,
+				67CE9009BF028040F3F66C47 /* OnboardingInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9BFF55B41006B4E313504E63 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A252414D04D76A8023A2FF83 /* View */,
+				90D2F8FF02C159A52E8C2350 /* Interactor */,
+				22C5686CF5C81944DD0A12A0 /* Presenter */,
+				1C387B64B7EF1140687473F6 /* Router */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A252414D04D76A8023A2FF83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				931459935DDE86D49B5EA0AF /* OnboardingViewInput.swift */,
+				224608C41FC9D38B85F678A7 /* OnboardingViewOutput.swift */,
+				ED7FC6B662F8A4F501C259F8 /* OnboardingViewController.swift */,
+				33B53F5F1DD11B1700462C66 /* OnboardingStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A258EB473F6820DCF6959C9F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				224A4585515F8EB4C485D3E3 /* LoginModuleInput.swift */,
+				AD6D1CB8E31C642E6E8E6D46 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A3CD41A2371AAF6158E901AB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FFF499333B68717D078EBA7C /* View */,
+				A258EB473F6820DCF6959C9F /* Presenter */,
+				EF625FDD052B815E3DF14F29 /* Interactor */,
+				C900E9342A92378B998A9B9C /* Router */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C900E9342A92378B998A9B9C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FF9ABFEDF5193E8152C70B1A /* LoginRouterInput.swift */,
+				22DB90BC9C42EE658E678FCE /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D48F497F7462233E9A7622F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70C8C75A9C4F620617B81875 /* Pods_EitaPAY.framework */,
+				BE439189BD48D480CADAC94F /* Pods_EitaPAYTests.framework */,
+				A2E019C5FE01FFAF16698F57 /* Pods_EitaPAYUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFB5FC0D54F1EEAC86F81462 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D814F03EDC0E76DD9F62E10 /* Pods-EitaPAY.debug.xcconfig */,
+				251D38CBF1293770954364EA /* Pods-EitaPAY.release.xcconfig */,
+				2684FAB72651AF11D46694DB /* Pods-EitaPAYTests.debug.xcconfig */,
+				52E1EE5855FCAF36E3598E61 /* Pods-EitaPAYTests.release.xcconfig */,
+				B42CD2FF0D3C8DA47897562E /* Pods-EitaPAYUITests.debug.xcconfig */,
+				97B09D973F4F35245E40B3EE /* Pods-EitaPAYUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF625FDD052B815E3DF14F29 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5069817CCC367FD068440369 /* LoginInteractorInput.swift */,
+				C496D3AB68501F92860A3067 /* LoginInteractorOutput.swift */,
+				10D17BC4079A8AF6773190D9 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FFF499333B68717D078EBA7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16658FB45368E5459F392A47 /* LoginViewInput.swift */,
+				9824CF08327E7A62B83C41D6 /* LoginViewOutput.swift */,
+				BBC2E0DC18987BC2018F6244 /* LoginViewController.swift */,
+				33B53F611DD12B4D00462C66 /* LoginStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33B53F1B1DD0ECD500462C66 /* EitaPAY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33B53F441DD0ECD600462C66 /* Build configuration list for PBXNativeTarget "EitaPAY" */;
+			buildPhases = (
+				A6722BEF2A682D3827039983 /* [CP] Check Pods Manifest.lock */,
+				33B53F181DD0ECD500462C66 /* Sources */,
+				33B53F191DD0ECD500462C66 /* Frameworks */,
+				33B53F1A1DD0ECD500462C66 /* Resources */,
+				2714D8D206A0B739287AB04D /* [CP] Embed Pods Frameworks */,
+				1331296AB8FF76053FD5F387 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EitaPAY;
+			productName = EitaPAY;
+			productReference = 33B53F1C1DD0ECD500462C66 /* EitaPAY.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33B53F2F1DD0ECD500462C66 /* EitaPAYTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33B53F471DD0ECD600462C66 /* Build configuration list for PBXNativeTarget "EitaPAYTests" */;
+			buildPhases = (
+				65DD88ADC3D9296ED33ECAC0 /* [CP] Check Pods Manifest.lock */,
+				33B53F2C1DD0ECD500462C66 /* Sources */,
+				33B53F2D1DD0ECD500462C66 /* Frameworks */,
+				33B53F2E1DD0ECD500462C66 /* Resources */,
+				7D90FEF52C837F43B6763D7C /* [CP] Embed Pods Frameworks */,
+				950C4B11DC74EC4EDE5FD36D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33B53F321DD0ECD600462C66 /* PBXTargetDependency */,
+			);
+			name = EitaPAYTests;
+			productName = EitaPAYTests;
+			productReference = 33B53F301DD0ECD500462C66 /* EitaPAYTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		33B53F3A1DD0ECD600462C66 /* EitaPAYUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33B53F4A1DD0ECD600462C66 /* Build configuration list for PBXNativeTarget "EitaPAYUITests" */;
+			buildPhases = (
+				3B14A473BE1AC4F23E0721AC /* [CP] Check Pods Manifest.lock */,
+				33B53F371DD0ECD600462C66 /* Sources */,
+				33B53F381DD0ECD600462C66 /* Frameworks */,
+				33B53F391DD0ECD600462C66 /* Resources */,
+				ED407F9F646646B9CFC3D530 /* [CP] Embed Pods Frameworks */,
+				D35FDC8EEE776DD890B5BD06 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33B53F3D1DD0ECD600462C66 /* PBXTargetDependency */,
+			);
+			name = EitaPAYUITests;
+			productName = EitaPAYUITests;
+			productReference = 33B53F3B1DD0ECD600462C66 /* EitaPAYUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33B53F141DD0ECD500462C66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Cheesecake Labs";
+				TargetAttributes = {
+					33B53F1B1DD0ECD500462C66 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C7KQ8QZ5XP;
+						ProvisioningStyle = Automatic;
+					};
+					33B53F2F1DD0ECD500462C66 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C7KQ8QZ5XP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 33B53F1B1DD0ECD500462C66;
+					};
+					33B53F3A1DD0ECD600462C66 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C7KQ8QZ5XP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 33B53F1B1DD0ECD500462C66;
+					};
+				};
+			};
+			buildConfigurationList = 33B53F171DD0ECD500462C66 /* Build configuration list for PBXProject "EitaPAY" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33B53F131DD0ECD500462C66;
+			productRefGroup = 33B53F1D1DD0ECD500462C66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33B53F1B1DD0ECD500462C66 /* EitaPAY */,
+				33B53F2F1DD0ECD500462C66 /* EitaPAYTests */,
+				33B53F3A1DD0ECD600462C66 /* EitaPAYUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33B53F1A1DD0ECD500462C66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33B53F2A1DD0ECD500462C66 /* LaunchScreen.storyboard in Resources */,
+				33B53F621DD12B4D00462C66 /* LoginStoryboard.storyboard in Resources */,
+				33B53F271DD0ECD500462C66 /* Assets.xcassets in Resources */,
+				33B53F601DD11B1700462C66 /* OnboardingStoryboard.storyboard in Resources */,
+				33B53F251DD0ECD500462C66 /* (null) in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33B53F2E1DD0ECD500462C66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33B53F391DD0ECD600462C66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1331296AB8FF76053FD5F387 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EitaPAY/Pods-EitaPAY-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2714D8D206A0B739287AB04D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EitaPAY/Pods-EitaPAY-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B14A473BE1AC4F23E0721AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		65DD88ADC3D9296ED33ECAC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7D90FEF52C837F43B6763D7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EitaPAYTests/Pods-EitaPAYTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		950C4B11DC74EC4EDE5FD36D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EitaPAYTests/Pods-EitaPAYTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6722BEF2A682D3827039983 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D35FDC8EEE776DD890B5BD06 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EitaPAYUITests/Pods-EitaPAYUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED407F9F646646B9CFC3D530 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EitaPAYUITests/Pods-EitaPAYUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33B53F181DD0ECD500462C66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33B53F5A1DD0FC8F00462C66 /* AppDependencies.swift in Sources */,
+				33B53F5D1DD0FDD200462C66 /* RootWireframe.swift in Sources */,
+				33B53F201DD0ECD500462C66 /* AppDelegate.swift in Sources */,
+				5C6241BC74DBE7ABF43791AC /* OnboardingViewInput.swift in Sources */,
+				668D5910720D55416509AB50 /* OnboardingViewOutput.swift in Sources */,
+				3A8878341A357AC1352BFB6D /* OnboardingViewController.swift in Sources */,
+				6D4C8C323CD60F4EBE5BE347 /* OnboardingModuleInput.swift in Sources */,
+				3A7DA5A940801D37D86F6892 /* OnboardingPresenter.swift in Sources */,
+				5D076329073CFA1EDC1555A0 /* OnboardingInteractorInput.swift in Sources */,
+				07D3DC0C7AA72324FB87C8C5 /* OnboardingInteractorOutput.swift in Sources */,
+				0E334971FA46B129EF184F7D /* OnboardingInteractor.swift in Sources */,
+				B056022AB34BD47664EB4816 /* OnboardingRouterInput.swift in Sources */,
+				5FDFD01086CA95DB2CA0404A /* OnboardingRouter.swift in Sources */,
+				6E22E02861B2E73C8CA537D2 /* LoginViewInput.swift in Sources */,
+				3EDAAC7A055812F35D27C17F /* LoginViewOutput.swift in Sources */,
+				FA26E55A460859FC1D55516A /* LoginViewController.swift in Sources */,
+				61A2528AAB7CE03CC36FC736 /* LoginModuleInput.swift in Sources */,
+				E4FEF9A7ACC07B02EE44A935 /* LoginPresenter.swift in Sources */,
+				755D076908AA38A083264A73 /* LoginInteractorInput.swift in Sources */,
+				435A146BF35FF166306C4776 /* LoginInteractorOutput.swift in Sources */,
+				7FC56D3584747D6FA2213C23 /* LoginInteractor.swift in Sources */,
+				C57CDCD759FBB5F3B4BDF0BB /* LoginRouterInput.swift in Sources */,
+				A747B789F0367FDE86E1B850 /* LoginRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33B53F2C1DD0ECD500462C66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33B53F351DD0ECD600462C66 /* EitaPAYTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33B53F371DD0ECD600462C66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33B53F401DD0ECD600462C66 /* EitaPAYUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33B53F321DD0ECD600462C66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33B53F1B1DD0ECD500462C66 /* EitaPAY */;
+			targetProxy = 33B53F311DD0ECD600462C66 /* PBXContainerItemProxy */;
+		};
+		33B53F3D1DD0ECD600462C66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33B53F1B1DD0ECD500462C66 /* EitaPAY */;
+			targetProxy = 33B53F3C1DD0ECD600462C66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33B53F281DD0ECD500462C66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33B53F291DD0ECD500462C66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33B53F421DD0ECD600462C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33B53F431DD0ECD600462C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33B53F451DD0ECD600462C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D814F03EDC0E76DD9F62E10 /* Pods-EitaPAY.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C7KQ8QZ5XP;
+				INFOPLIST_FILE = EitaPAY/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ckl.io.gracietti.EitaPAY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		33B53F461DD0ECD600462C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251D38CBF1293770954364EA /* Pods-EitaPAY.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C7KQ8QZ5XP;
+				INFOPLIST_FILE = EitaPAY/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ckl.io.gracietti.EitaPAY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		33B53F481DD0ECD600462C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2684FAB72651AF11D46694DB /* Pods-EitaPAYTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = C7KQ8QZ5XP;
+				INFOPLIST_FILE = EitaPAYTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ckl.io.gracietti.EitaPAYTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EitaPAY.app/EitaPAY";
+			};
+			name = Debug;
+		};
+		33B53F491DD0ECD600462C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52E1EE5855FCAF36E3598E61 /* Pods-EitaPAYTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = C7KQ8QZ5XP;
+				INFOPLIST_FILE = EitaPAYTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ckl.io.gracietti.EitaPAYTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EitaPAY.app/EitaPAY";
+			};
+			name = Release;
+		};
+		33B53F4B1DD0ECD600462C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B42CD2FF0D3C8DA47897562E /* Pods-EitaPAYUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = C7KQ8QZ5XP;
+				INFOPLIST_FILE = EitaPAYUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ckl.io.gracietti.EitaPAYUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = EitaPAY;
+			};
+			name = Debug;
+		};
+		33B53F4C1DD0ECD600462C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97B09D973F4F35245E40B3EE /* Pods-EitaPAYUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = C7KQ8QZ5XP;
+				INFOPLIST_FILE = EitaPAYUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ckl.io.gracietti.EitaPAYUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = EitaPAY;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33B53F171DD0ECD500462C66 /* Build configuration list for PBXProject "EitaPAY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33B53F421DD0ECD600462C66 /* Debug */,
+				33B53F431DD0ECD600462C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33B53F441DD0ECD600462C66 /* Build configuration list for PBXNativeTarget "EitaPAY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33B53F451DD0ECD600462C66 /* Debug */,
+				33B53F461DD0ECD600462C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33B53F471DD0ECD600462C66 /* Build configuration list for PBXNativeTarget "EitaPAYTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33B53F481DD0ECD600462C66 /* Debug */,
+				33B53F491DD0ECD600462C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33B53F4A1DD0ECD600462C66 /* Build configuration list for PBXNativeTarget "EitaPAYUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33B53F4B1DD0ECD600462C66 /* Debug */,
+				33B53F4C1DD0ECD600462C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33B53F141DD0ECD500462C66 /* Project object */;
+}

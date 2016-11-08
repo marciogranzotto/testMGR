@@ -1,6 +1,3 @@
 ## Synopsis
 
-– Cheesecake Labs – iOS Challenge
-
-## Installation
-
+– EitaPAY iOS App
