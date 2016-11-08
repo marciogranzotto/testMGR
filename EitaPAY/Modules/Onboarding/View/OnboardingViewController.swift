@@ -11,10 +11,10 @@ import UIKit
 class OnboardingViewController: UIViewController, OnboardingViewInput {
 
     // MARK: Instance Variables
-    var output: OnboardingViewOutput!    
+    var output: OnboardingViewOutput!   // FIXME: call it presenter for readability. Should be optional for safety
     
     @IBAction func enterButton(_ sender: UIButton) {
-        output.userWantsToLogin()
+        output.userWantsToLogin() // FIXME: presenter?.onEnterButtonClicked()
     }
     
     

@@ -17,7 +17,7 @@ class AppDependencies {
     // MARK: Public
     
     init() {
-        let rootWireframe = RootWireframe()
+        let rootWireframe = RootWireframe() // FIXME: Should be RootRouter
         onboardingRouter = OnboardingRouter()
         onboardingRouter.rootWireframe = rootWireframe
     }

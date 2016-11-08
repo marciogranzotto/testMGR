@@ -8,6 +8,6 @@
 
 class LoginInteractor: LoginInteractorInput {
 
-    weak var output: LoginInteractorOutput!
+    weak var output: LoginInteractorOutput! // FIXME: Should be optional
 
 }

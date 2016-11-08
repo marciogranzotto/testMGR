@@ -8,11 +8,11 @@
 
 class LoginPresenter: LoginModuleInput, LoginViewOutput, LoginInteractorOutput {
 
-    weak var view: LoginViewInput!
-    var interactor: LoginInteractorInput!
-    var router: LoginRouterInput!
+    weak var view: LoginViewInput!  // FIXME: Should be optional
+    var interactor: LoginInteractorInput!   // FIXME: Should be optional
+    var router: LoginRouterInput!   // FIXME: Should be optional
 
-    func viewIsReady() {
+    func viewIsReady() {    //FIXME: Should be named onViewDidLoad. In some cases you'll need to show stuff on viewDidAppear, or viewWillAppear, so the name of this function should be very straigt forward
 
     }
 }

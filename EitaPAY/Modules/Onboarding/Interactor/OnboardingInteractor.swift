@@ -8,6 +8,6 @@
 
 class OnboardingInteractor: OnboardingInteractorInput {
 
-    weak var output: OnboardingInteractorOutput!
+    weak var output: OnboardingInteractorOutput! // FIXME: Should be optional
 
 }

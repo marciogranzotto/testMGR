@@ -20,6 +20,6 @@ class LoginViewController: UIViewController, LoginViewInput {
 
 
     // MARK: LoginViewInput
-    func setupInitialState() {
+    func setupInitialState() { // FIXME: Which class will call this method?
     }
 }

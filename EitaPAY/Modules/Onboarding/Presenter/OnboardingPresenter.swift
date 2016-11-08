@@ -8,9 +8,9 @@
 
 class OnboardingPresenter: OnboardingModuleInput, OnboardingViewOutput, OnboardingInteractorOutput {
 
-    weak var view: OnboardingViewInput!
-    var interactor: OnboardingInteractorInput!
-    var router: OnboardingRouterInput!
+    weak var view: OnboardingViewInput!         // FIXME: Should be optional
+    var interactor: OnboardingInteractorInput!  // FIXME: Should be optional
+    var router: OnboardingRouterInput!          // FIXME: Should be optional
 
     func userWantsToLogin() {
         router.presentLoginScreen()

@@ -10,11 +10,13 @@ import UIKit
 class OnboardingRouter: OnboardingRouterInput {
 
     // MARK: Constants
+    // FIXME: On my project all the constants are on a Constant class that has several enums, so you would call Constants.Storyboard.onBoarding . It makes it easier to reuse the constants on other files
     let storyboardName = "OnboardingStoryboard"
     let thisViewControllerIdentifier = "OnboardingViewControllerID"
     
     // MARK: Instance Variables
-    weak var onboardingViewController: OnboardingViewController!
+    // FIXME: You should only keep the instance of what you need. I just keep the viewController, but as a generic UIViewController, not the specific class. Also make all optional, specially the weak ones.
+    weak var onboardingViewController: OnboardingViewController! // FIXME: Change it to `weak var viewController: UIViewController?`
     var onboardingPresenter: OnboardingPresenter!
     var rootWireframe: RootWireframe!
     var loginRouter: LoginRouter!
@@ -37,7 +39,7 @@ class OnboardingRouter: OnboardingRouterInput {
     }
     
     func presentLoginScreen() {
-        loginRouter = LoginRouter()
+        loginRouter = LoginRouter() // FIXME: You don't need to keep that instance. Just do a `let loginRouter = LoginRouter()` and remove the property from the class
         loginRouter.presentLoginInterfaceFromViewController(onboardingViewController)
     }
     

@@ -18,17 +18,18 @@ class LoginRouter: LoginRouterInput {
     
     // MARK: Instance Variables
     
-    weak var loginViewController: LoginViewController!
-    var loginPresenter: LoginPresenter!
+    weak var loginViewController: LoginViewController! // FIXME: Change it to `weak var viewController: UIViewController?`
+    var loginPresenter: LoginPresenter! // FIXME: Remove this line, you don't need to keep the reference
     
     // MARK: Public
     
     init() {
-        loginPresenter = LoginPresenter()
+        loginPresenter = LoginPresenter() // FIXME: You don't need to instanciate it on init
     }
     
     func presentLoginInterfaceFromViewController(_ controller: UIViewController) {
         loginViewController = loginViewControllerFromStoryboard()
+        // FIXME: you can do `let loginPresenter = LoginPresenter()` in here
         loginViewController.output = loginPresenter
         loginPresenter.view = loginViewController
         loginPresenter.router = self

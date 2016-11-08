@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RootWireframe {
+class RootWireframe { // FIXME: Should be named RootRouter and should implement RootWireframe protocol
     
     func showRootViewController(_ viewController: UIViewController, inWindow window: UIWindow) {
         let navigationController = window.rootViewController as! UINavigationController
